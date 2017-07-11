@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="container">
+    <div class="row">
+        <form name="myPostForm" class="col-md-4" ng-submit="postjob()" >
+            
+            <div class="form-group">
+                <label> Job Title: </label>
+                <input name="title" class="form-control" ng-model="title" required/>
+               
+            </div>
+            <div class="form-group">
+                <label> Job Description </label>
+                <textarea name="description" ng-model="description" class="form-control" required/>Enter text here...</textarea>
+           
+            </div>
+            <div class="form-group">
+                <label> Keywords </label>
+                <input name="keywords" class="form-control" ng-model="keywords" type="text" required/>
+               
+            </div>
+            <div class="form-group">
+                <label> Location: </label>
+                <input type="text" name="location" class="form-control" ng-model="location" required/>
+               
+            </div>
+            
+            <br />
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<br/><br/><br/>
+<a href="#/home/{{menuID}}">Home</a> 
+
+
